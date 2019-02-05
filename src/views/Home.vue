@@ -32,7 +32,7 @@ export default {
       fm2: ['Maria W.', 'Maria F.', 'Matilde', 'Hugo', 'Francisco', 'Afonso', 'Joana'],
       fm3: ['Tatiana', 'Patrícia', 'Rafaela', 'Leonor', 'Jéssica', 'Gustavo', 'Davide', 'Martim']
     },
-    activeClass: 'fm2',
+    activeClass: 'fm3',
     shuffledUsers: null,
     waiting: false,
     played: false
