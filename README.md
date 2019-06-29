@@ -1,4 +1,6 @@
-# rythmcards
+# Rhythm Cards: a music teaching game
+
+A very simple Vue app built for music teaching lessons. Rhythm cards are sorted (either by a chosen student or the teacher) and each student has to replicate the card they were randomly given.
 
 ## Project setup
 ```
