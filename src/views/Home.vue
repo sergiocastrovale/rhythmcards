@@ -14,7 +14,7 @@
         <li v-for="(user, i) in shuffledUsers" :key="i">
           <div class="number">{{ i + 1 }}</div>
 
-          <img :src="buildImagePath(i + 1)" alt="">
+          <img :src="buildImagePath(i + 1)" alt="Exercício rítmico">
 
           <div>
             <div class="name">{{ user }}</div>
@@ -32,7 +32,7 @@ export default {
       fm2: ['Maria W.', 'Maria F.', 'Matilde', 'Hugo', 'Francisco', 'Afonso', 'Joana'],
       fm3: ['Tatiana', 'Patrícia', 'Rafaela', 'Leonor', 'Jéssica', 'Gustavo', 'Davide', 'Martim']
     },
-    activeClass: 'fm3',
+    activeClass: 'fm2',
     shuffledUsers: null,
     waiting: false,
     played: false
@@ -56,6 +56,7 @@ export default {
     shuffle () {
       let users = [...this.classes[this.activeClass]]
 
+      // Bind a random rythm card to a student
       for (let i = users.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [users[i], users[j]] = [users[j], users[i]];
